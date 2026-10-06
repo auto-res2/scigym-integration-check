@@ -1,29 +1,29 @@
 {
   "curves": {},
   "inputs_summary": {
-    "n_instances": 1.0,
-    "n_valid_submissions": 0.0
+    "n_instances": 10.0,
+    "n_valid_submissions": 10.0
   },
   "metrics": {
-    "reaction_f1": 0.0,
-    "reaction_f1_vs_best_published": -0.3383,
-    "reaction_f1_with_modifiers": 0.0,
-    "reaction_precision": 0.0,
-    "reaction_precision_with_modifiers": 0.0,
-    "reaction_recall": 0.0,
-    "reaction_recall_with_modifiers": 0.0,
-    "topology_f1": 0.0,
-    "topology_f1_modifier_product": 0.0,
-    "topology_f1_reactant_modifier": 0.0,
-    "topology_f1_reactant_product": 0.0,
-    "topology_precision": 0.0,
-    "topology_recall": 0.0,
-    "trajectory_smape": 0.4121400276697038,
-    "trajectory_smape_vs_best_published": 0.09094002766970383
+    "reaction_f1": 0.5889754689754689,
+    "reaction_f1_vs_best_published": 0.25067546897546894,
+    "reaction_f1_with_modifiers": 0.33564213564213563,
+    "reaction_precision": 0.6461904761904762,
+    "reaction_precision_with_modifiers": 0.35690476190476195,
+    "reaction_recall": 0.5650000000000001,
+    "reaction_recall_with_modifiers": 0.3292857142857143,
+    "topology_f1": 0.49248196248196247,
+    "topology_f1_modifier_product": 0.126984126984127,
+    "topology_f1_reactant_modifier": 0.03174603174603175,
+    "topology_f1_reactant_product": 0.4793539793539794,
+    "topology_precision": 0.61,
+    "topology_recall": 0.43,
+    "trajectory_smape": 0.1497765434023105,
+    "trajectory_smape_vs_best_published": -0.17142345659768948
   },
   "omitted_optional_inputs": [],
   "provenance": {
-    "inputs_sha256": "42dc7ed0553b2411eab3123a65746355844b33caf6ccdc286f8bf29f1d623f8f",
+    "inputs_sha256": "3e60a6c00a3b7c744e5db38b3df515f0341d363ba21e94ec68327936fae56977",
     "task_signature": "scigym_small/v1@139c6084495c",
     "versions": {
       "airas-eval": "0.13.1",
