@@ -1,0 +1,24 @@
+{
+  "dirs": {
+    "gemini-3.8-flash": {
+      "execution_id": "aac40947-86c7-4798-ba36-0c20bd80ed06",
+      "backend": "seyval",
+      "commit_hash": "2cd4ccee9f313980c7922e7dcf5e17265c5d1dbf",
+      "overrides": {
+        "airas_secret_names": "ANTHROPIC_API_KEY,AWS_ACCESS_KEY_ID,AWS_BEARER_TOKEN_BEDROCK,AWS_SECRET_ACCESS_KEY,GEMINI_API_KEY,GH_PERSONAL_ACCESS_TOKEN,HF_TOKEN,NVIDIA_API_KEY,OPENAI_API_KEY,RIKYU_API_KEY,SEYVAL_API_KEY,VERCEL_AI_GATEWAY_API_KEY,WANDB_API_KEY",
+        "run_id": "gemini-3.8-flash",
+        "mode": "sanity",
+        "airas_eval_tasks": "scigym_small"
+      },
+      "parameters": {},
+      "files": {
+        ".research/results/gemini-3.8-flash/eval_inputs/scigym_small.json.gz": "9ffea2a57bdd59466941199affe4ebb0cdadb5ef7c179f70b4e63fb510a8ead2",
+        ".research/results/gemini-3.8-flash/evaluation/scigym_small.json": "e229f74daa67cc048709594c42dbc6421ce5fdaa7b8ee1d29030cb46526c9f00",
+        ".research/results/gemini-3.8-flash/instances.tar.gz": "c21ee917576ad213c0bf5906479b259f2ed2f8543ed5a24e7d8ba738ab560933",
+        ".research/results/gemini-3.8-flash/metrics.json": "3a694bf0802d5b90d50f5dc100553f9275cc8cd38647394b4f741db228e233c8",
+        ".research/results/gemini-3.8-flash/observed.json": "d13b7c0ee611763900c8fad49a46920512e8915b8390d440a440825d127eca2f",
+        ".research/results/gemini-3.8-flash/tokens.json": "17926159fe29c857f25bdd91976f7df055e9b2224762f2679dbb82e334958464"
+      }
+    }
+  }
+}

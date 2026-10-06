@@ -1,0 +1,2184 @@
+{
+ "version": 1,
+ "run_id": "gemini-3.8-flash",
+ "hook": {
+  "sha256": "94d151181251856d3a3e482f0678c81bd6e83daa49d20e63c825ef26fec2197a"
+ },
+ "loaded_file_hashes": {
+  "scigym": {
+   "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/__init__.py",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "scigym.api.api": {
+   "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/api/api.py",
+   "sha256": "671a56010ef14f5a1746cea5db46a9d5087b30df4f37ecb96dbb1c6bf0b1dffd"
+  },
+  "scigym.api.constants": {
+   "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/api/constants.py",
+   "sha256": "51c3cade87faf00409322fefb16d1190b9363097896741e15dc136755df93adf"
+  },
+  "scigym.api.exceptions": {
+   "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/api/exceptions.py",
+   "sha256": "c04157e5e88e4e07f88b8f2efe08ecf051e13644e0cf264b897ce30cedec7837"
+  },
+  "scigym.api": {
+   "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/api/__init__.py",
+   "sha256": "58f68efbeb4d17ac6876c59cbde5cf5e5401832a4a39b5085930594b831d7650"
+  },
+  "scigym.actions.code": {
+   "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/actions/code.py",
+   "sha256": "3c2b194556ac502f835663b80f22eb4e5ed1d8d10302e7eca37f65c024737352"
+  },
+  "scigym.utils.main": {
+   "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py",
+   "sha256": "3ebef173b63916900fe11ced45159a8e67b2a07890b51241761bc9e292d48960"
+  },
+  "scigym.utils.id_scrambler": {
+   "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/id_scrambler.py",
+   "sha256": "7e0d1f8864c64260365a7345bd1a74dd23279123a5005bac6de1b8536c9e832b"
+  },
+  "scigym.utils.sr_graph": {
+   "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/sr_graph.py",
+   "sha256": "ba226d197cf17e8c778fef911cbf1efa5bdc906afa1de87a26d01d7681938311"
+  },
+  "scigym.utils": {
+   "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/__init__.py",
+   "sha256": "9cf59bae86c2128eb0198f56e6288c0d1efe4140c498639fe6642c2cc73f84e5"
+  },
+  "scigym.data.sbml": {
+   "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/sbml.py",
+   "sha256": "8f201d4e6a90baeb9821b0273466edd48587347257b67286be28265586af48fc"
+  },
+  "scigym.data.question": {
+   "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/question.py",
+   "sha256": "cd9aeea5d3701a74f852b316b28513b1901b8d4e556619f090eed195fd059384"
+  },
+  "scigym.data.simulator": {
+   "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/simulator.py",
+   "sha256": "f6aecc9cebaff5d3d769f39f114778d8d693cb22965a87673c8438ac933f942d"
+  },
+  "scigym.data": {
+   "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/__init__.py",
+   "sha256": "a8d2d06c6d71f96b983e201837cefa2f70f392fcb123b2869321989e55ec4278"
+  },
+  "scigym.actions.experiment": {
+   "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/actions/experiment.py",
+   "sha256": "5934855cb1375f89c5657541efb2c4eb6131fcbf4aad17c40702cfd7fb24fff9"
+  },
+  "scigym.actions.routines": {
+   "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/actions/routines.py",
+   "sha256": "36fee55ef243957b83abfb972acd2811e9897b4ed087fea25aca329dea8ce782"
+  },
+  "scigym.actions": {
+   "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/actions/__init__.py",
+   "sha256": "9b7b1c1aefbbb8a2bd73a8b2c6922a846be9c7ad1d0ddd25808bbf9fd53867a4"
+  },
+  "scigym.eval.utils": {
+   "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/eval/utils.py",
+   "sha256": "4937e2dc81f462376fa3c41d27520440d5b9c0906487492920c2015a84ff17ad"
+  },
+  "scigym.eval.evaluator": {
+   "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/eval/evaluator.py",
+   "sha256": "8d90fcf888f441ab8d37f5f549efa1d388dc663640c351e2a6c512ec53161c76"
+  },
+  "scigym.eval": {
+   "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/eval/__init__.py",
+   "sha256": "1e3867ad24ed52979ba389e4790b5d092f4868c1f4f5f4dbeaa68eac3086f828"
+  },
+  "scigym.controller": {
+   "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/controller.py",
+   "sha256": "a95a103fddc0045d99e302cbf88854a9e2a46bd52e1c9ffb4ca439ab03f66828"
+  }
+ },
+ "loaded_definitions": {
+  "scigym": {},
+  "scigym.api.api": {
+   "abstractmethod": {
+    "module": "abc",
+    "file": "<frozen abc>"
+   },
+   "CodeResult": {
+    "module": "scigym.api.api"
+   },
+   "CodeResult.__init__": {
+    "module": "scigym.api.api",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/api/api.py"
+   },
+   "CodeResult.to_string": {
+    "module": "scigym.api.api",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/api/api.py"
+   },
+   "CodeResult.return_data": {
+    "module": "scigym.api.api",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/api/api.py"
+   },
+   "CodeRequest": {
+    "module": "scigym.api.api"
+   },
+   "CodeRequest.__init__": {
+    "module": "scigym.api.api",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/api/api.py"
+   },
+   "CodeRequest.to_dict": {
+    "module": "scigym.api.api",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/api/api.py"
+   },
+   "CodeRequest.to_str": {
+    "module": "scigym.api.api",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/api/api.py"
+   },
+   "EvaluationResult": {
+    "module": "scigym.api.api"
+   },
+   "EvaluationResult.to_dict": {
+    "module": "scigym.api.api",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/api/api.py"
+   },
+   "EvaluationResult.__repr__": {
+    "module": "scigym.api.api",
+    "file": "/usr/local/lib/python3.11/dataclasses.py"
+   },
+   "BenchmarkResult": {
+    "module": "scigym.api.api"
+   },
+   "BenchmarkResult.to_dict": {
+    "module": "scigym.api.api",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/api/api.py"
+   },
+   "BenchmarkResult.__repr__": {
+    "module": "scigym.api.api",
+    "file": "/usr/local/lib/python3.11/dataclasses.py"
+   },
+   "VariableStorage": {
+    "module": "scigym.api.api"
+   },
+   "VariableStorage.add": {
+    "module": "scigym.api.api",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/api/api.py"
+   },
+   "VariableStorage.access": {
+    "module": "scigym.api.api",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/api/api.py"
+   },
+   "VariableStorage.return_variables": {
+    "module": "scigym.api.api",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/api/api.py"
+   },
+   "VariableStorage.to_dict": {
+    "module": "scigym.api.api",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/api/api.py"
+   },
+   "VariableStorage.__repr__": {
+    "module": "scigym.api.api",
+    "file": "/usr/local/lib/python3.11/dataclasses.py"
+   },
+   "LLMError": {
+    "module": "scigym.api.api"
+   },
+   "LLMError.__repr__": {
+    "module": "scigym.api.api",
+    "file": "/usr/local/lib/python3.11/dataclasses.py"
+   },
+   "LLMMessage": {
+    "module": "scigym.api.api"
+   },
+   "LLMMessage.__repr__": {
+    "module": "scigym.api.api",
+    "file": "/usr/local/lib/python3.11/dataclasses.py"
+   },
+   "RemoveReactionAction": {
+    "module": "scigym.api.api"
+   },
+   "RemoveReactionAction.__repr__": {
+    "module": "scigym.api.api",
+    "file": "/usr/local/lib/python3.11/dataclasses.py"
+   },
+   "RemoveSpeciesAction": {
+    "module": "scigym.api.api"
+   },
+   "RemoveSpeciesAction.__repr__": {
+    "module": "scigym.api.api",
+    "file": "/usr/local/lib/python3.11/dataclasses.py"
+   },
+   "RemoveKineticLawAction": {
+    "module": "scigym.api.api"
+   },
+   "RemoveKineticLawAction.__repr__": {
+    "module": "scigym.api.api",
+    "file": "/usr/local/lib/python3.11/dataclasses.py"
+   },
+   "NullifyReactionAction": {
+    "module": "scigym.api.api"
+   },
+   "NullifyReactionAction.__repr__": {
+    "module": "scigym.api.api",
+    "file": "/usr/local/lib/python3.11/dataclasses.py"
+   },
+   "ModifyReactionAction": {
+    "module": "scigym.api.api"
+   },
+   "ModifyReactionAction.__repr__": {
+    "module": "scigym.api.api",
+    "file": "/usr/local/lib/python3.11/dataclasses.py"
+   },
+   "NullifySpeciesAction": {
+    "module": "scigym.api.api"
+   },
+   "NullifySpeciesAction.__repr__": {
+    "module": "scigym.api.api",
+    "file": "/usr/local/lib/python3.11/dataclasses.py"
+   },
+   "ModifySpeciesAction": {
+    "module": "scigym.api.api"
+   },
+   "ModifySpeciesAction.__repr__": {
+    "module": "scigym.api.api",
+    "file": "/usr/local/lib/python3.11/dataclasses.py"
+   },
+   "ExperimentConstraint": {
+    "module": "scigym.api.api"
+   },
+   "ExperimentConstraint.to_string": {
+    "module": "scigym.api.api",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/api/api.py"
+   },
+   "ExperimentConstraint.__repr__": {
+    "module": "scigym.api.api",
+    "file": "/usr/local/lib/python3.11/dataclasses.py"
+   },
+   "ExperimentConfig": {
+    "module": "scigym.api.api"
+   },
+   "ExperimentConfig.to_str": {
+    "module": "scigym.api.api",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/api/api.py"
+   },
+   "ExperimentConfig.to_dict": {
+    "module": "scigym.api.api",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/api/api.py"
+   },
+   "ExperimentConfig.__repr__": {
+    "module": "scigym.api.api",
+    "file": "/usr/local/lib/python3.11/dataclasses.py"
+   },
+   "display_dataframe_sample": {
+    "module": "scigym.api.api",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/api/api.py"
+   },
+   "create_dataframe": {
+    "module": "scigym.api.api",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/api/api.py"
+   },
+   "ExperimentResult": {
+    "module": "scigym.api.api"
+   },
+   "ExperimentResult.__init__": {
+    "module": "scigym.api.api",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/api/api.py"
+   },
+   "ExperimentResult.set_id": {
+    "module": "scigym.api.api",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/api/api.py"
+   },
+   "ExperimentResult.to_string": {
+    "module": "scigym.api.api",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/api/api.py"
+   },
+   "ExperimentResult.__eq__": {
+    "module": "scigym.api.api",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/api/api.py"
+   },
+   "ModelProvider": {
+    "module": "scigym.api.api"
+   },
+   "ModelProvider.initialize": {
+    "module": "scigym.api.api",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/api/api.py"
+   },
+   "ModelProvider.get_response": {
+    "module": "scigym.api.api",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/api/api.py"
+   },
+   "ModelProvider.get_messages": {
+    "module": "scigym.api.api",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/api/api.py"
+   },
+   "LLM": {
+    "module": "scigym.api.api"
+   },
+   "LLM.__init__": {
+    "module": "scigym.api.api",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/api/api.py"
+   },
+   "LLM.get_message": {
+    "module": "scigym.api.api",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/api/api.py"
+   },
+   "LLM.return_response": {
+    "module": "scigym.api.api",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/api/api.py"
+   }
+  },
+  "scigym.api.constants": {
+   "f": {
+    "module": "scigym.api.constants",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/api/constants.py"
+   }
+  },
+  "scigym.api.exceptions": {
+   "ParseExperimentActionError": {
+    "module": "scigym.api.exceptions"
+   },
+   "ApplyExperimentActionError": {
+    "module": "scigym.api.exceptions"
+   }
+  },
+  "scigym.api": {
+   "abstractmethod": {
+    "module": "abc",
+    "file": "<frozen abc>"
+   }
+  },
+  "scigym.actions.code": {
+   "timeout_handler": {
+    "module": "scigym.actions.code",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/actions/code.py"
+   },
+   "Code": {
+    "module": "scigym.actions.code"
+   },
+   "Code.__init__": {
+    "module": "scigym.actions.code",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/actions/code.py"
+   },
+   "Code._safe_execute": {
+    "module": "scigym.actions.code",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/actions/code.py"
+   },
+   "Code.execute_request": {
+    "module": "scigym.actions.code",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/actions/code.py"
+   }
+  },
+  "scigym.utils.main": {
+   "find_latest_timestamp_folder": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "compute_smape": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "perturb_concentration_proportional": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "print_chat_history_with_tokens": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "SkipNonSerializableEncoder": {
+    "module": "scigym.utils.main"
+   },
+   "SkipNonSerializableEncoder.default": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "read_file": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "replace_section": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "update_markdown": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "calculate_stats_dict": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "display_sample_rows": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "create_dataframe": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "compute_mean_error": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "find_json": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "conversation_to_ordered_dict": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "dict_to_array": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "default_model_parameter": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "default_document_parameter": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "get_experimental_constraint": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "generate_new_id": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "load_sedml_from_string_or_file": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "check_validity": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "compare_dicts": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "subsample_dict": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "subsample_array": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "ast_references_species": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "find_species_references": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "find_reaction_references": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "find_dangling_objects": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "find_parameter_initializations": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "find_species_knockout_references": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "process_annotation": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "parse_experiment_action": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "make_random_sequence_of_actions_strings": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "generate_all_possible_action_strings": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "generate_invalid_action_strings": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "shuffle_parameters": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "shuffle_reactions": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "shuffle_species": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "shuffle_rules": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "shuffle_compartments": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "shuffle_function_definitions": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "shuffle_constraints": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "shuffle_initial_assignments": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "shuffle_unit_definitions": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "getAllIds": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "getAllNames": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "canonicalize_name": {
+    "module": "scigym.utils.main",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   }
+  },
+  "scigym.utils.id_scrambler": {
+   "SIdScrambler": {
+    "module": "scigym.utils.id_scrambler"
+   },
+   "SIdScrambler.__init__": {
+    "module": "scigym.utils.id_scrambler",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/id_scrambler.py"
+   },
+   "SIdScrambler.transform": {
+    "module": "scigym.utils.id_scrambler",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/id_scrambler.py"
+   }
+  },
+  "scigym.utils.sr_graph": {
+   "node_match": {
+    "module": "scigym.utils.sr_graph",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/sr_graph.py"
+   },
+   "edge_match": {
+    "module": "scigym.utils.sr_graph",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/sr_graph.py"
+   },
+   "MySBMLDiagram": {
+    "module": "scigym.utils.sr_graph"
+   },
+   "MySBMLDiagram.__init__": {
+    "module": "scigym.utils.sr_graph",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/sr_graph.py"
+   },
+   "MySBMLDiagram._createGraph": {
+    "module": "scigym.utils.sr_graph",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/sr_graph.py"
+   },
+   "MySBMLDiagram.draw_and_save": {
+    "module": "scigym.utils.sr_graph",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/sr_graph.py"
+   },
+   "MySBMLDiagram.to_networkx": {
+    "module": "scigym.utils.sr_graph",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/sr_graph.py"
+   }
+  },
+  "scigym.utils": {},
+  "scigym.data.sbml": {
+   "SBML": {
+    "module": "scigym.data.sbml"
+   },
+   "SBML.__init__": {
+    "module": "scigym.data.sbml",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/sbml.py"
+   },
+   "SBML.load_sbml_from_string_or_file": {
+    "module": "scigym.data.sbml",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/sbml.py"
+   },
+   "SBML.load_sedml_from_string_or_file": {
+    "module": "scigym.data.sbml",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/sbml.py"
+   },
+   "SBML.get_parameter_ids": {
+    "module": "scigym.data.sbml",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/sbml.py"
+   },
+   "SBML.get_functions_ids": {
+    "module": "scigym.data.sbml",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/sbml.py"
+   },
+   "SBML.get_reaction_ids": {
+    "module": "scigym.data.sbml",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/sbml.py"
+   },
+   "SBML.get_species_ids": {
+    "module": "scigym.data.sbml",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/sbml.py"
+   },
+   "SBML.get_experiment_constraints": {
+    "module": "scigym.data.sbml",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/sbml.py"
+   },
+   "SBML.get_initial_parameter_values": {
+    "module": "scigym.data.sbml",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/sbml.py"
+   },
+   "SBML.change_initial_parameter_value": {
+    "module": "scigym.data.sbml",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/sbml.py"
+   },
+   "SBML.get_initial_concentrations": {
+    "module": "scigym.data.sbml",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/sbml.py"
+   },
+   "SBML.get_kinetic_law": {
+    "module": "scigym.data.sbml",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/sbml.py"
+   },
+   "SBML.shuffle_all": {
+    "module": "scigym.data.sbml",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/sbml.py"
+   },
+   "SBML.remove_parameter": {
+    "module": "scigym.data.sbml",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/sbml.py"
+   },
+   "SBML.remove_kinetic_law": {
+    "module": "scigym.data.sbml",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/sbml.py"
+   },
+   "SBML._remove_kinetic_law": {
+    "module": "scigym.data.sbml",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/sbml.py"
+   },
+   "SBML._recursively_parse_ast_node": {
+    "module": "scigym.data.sbml",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/sbml.py"
+   },
+   "SBML._count_usages": {
+    "module": "scigym.data.sbml",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/sbml.py"
+   },
+   "SBML.remove_reaction": {
+    "module": "scigym.data.sbml",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/sbml.py"
+   },
+   "SBML._remove_reaction": {
+    "module": "scigym.data.sbml",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/sbml.py"
+   },
+   "SBML.remove_species": {
+    "module": "scigym.data.sbml",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/sbml.py"
+   },
+   "SBML._remove_species": {
+    "module": "scigym.data.sbml",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/sbml.py"
+   },
+   "SBML.change_initial_concentration": {
+    "module": "scigym.data.sbml",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/sbml.py"
+   },
+   "SBML.nullify_species": {
+    "module": "scigym.data.sbml",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/sbml.py"
+   },
+   "SBML.apply_experiment_actions": {
+    "module": "scigym.data.sbml",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/sbml.py"
+   },
+   "SBML._apply_experiment_actions": {
+    "module": "scigym.data.sbml",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/sbml.py"
+   },
+   "SBML.add_noise_to_initial_concentrations": {
+    "module": "scigym.data.sbml",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/sbml.py"
+   },
+   "SBML.eval_add_noise_to_initial_concentrations": {
+    "module": "scigym.data.sbml",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/sbml.py"
+   },
+   "SBML.to_string": {
+    "module": "scigym.data.sbml",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/sbml.py"
+   },
+   "SBML.save": {
+    "module": "scigym.data.sbml",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/sbml.py"
+   },
+   "SBML.to_sedml_string": {
+    "module": "scigym.data.sbml",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/sbml.py"
+   },
+   "SBML.save_sedml": {
+    "module": "scigym.data.sbml",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/sbml.py"
+   },
+   "SBML._remove_metadata": {
+    "module": "scigym.data.sbml",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "SBML._scramble_ids": {
+    "module": "scigym.data.sbml",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/sbml.py"
+   },
+   "SBML._assign_unique_metaids": {
+    "module": "scigym.data.sbml",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "SBML._remove_metaids": {
+    "module": "scigym.data.sbml",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/utils/main.py"
+   },
+   "SBML._canonicalize_names": {
+    "module": "scigym.data.sbml",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/sbml.py"
+   },
+   "SBML._validate_references": {
+    "module": "scigym.data.sbml",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/sbml.py"
+   },
+   "SBML._get_rr_instance": {
+    "module": "scigym.data.sbml",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/sbml.py"
+   },
+   "SBML.code_to_sbml": {
+    "module": "scigym.data.sbml",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/sbml.py"
+   },
+   "SBML.__deepcopy__": {
+    "module": "scigym.data.sbml",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/sbml.py"
+   }
+  },
+  "scigym.data.question": {
+   "Question": {
+    "module": "scigym.data.question"
+   },
+   "Question.__init__": {
+    "module": "scigym.data.question",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/question.py"
+   },
+   "Question.get_research_question": {
+    "module": "scigym.data.question",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/question.py"
+   },
+   "Question.get_partial_sbml": {
+    "module": "scigym.data.question",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/question.py"
+   },
+   "Question.get_runnable_partial_sbml": {
+    "module": "scigym.data.question",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/question.py"
+   },
+   "Question.get_original_sbml": {
+    "module": "scigym.data.question",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/question.py"
+   },
+   "Question.load": {
+    "module": "scigym.data.question",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/question.py"
+   }
+  },
+  "scigym.data.simulator": {
+   "onEventTrigger": {
+    "module": "scigym.data.simulator",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/simulator.py"
+   },
+   "onEventAssignment": {
+    "module": "scigym.data.simulator",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/simulator.py"
+   },
+   "run_simulation": {
+    "module": "scigym.data.simulator",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/simulator.py"
+   },
+   "Simulator": {
+    "module": "scigym.data.simulator"
+   },
+   "Simulator.__init__": {
+    "module": "scigym.data.simulator",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/simulator.py"
+   },
+   "Simulator.onEventTrigger": {
+    "module": "scigym.data.simulator",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/simulator.py"
+   },
+   "Simulator.prepare_simulation": {
+    "module": "scigym.data.simulator",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/simulator.py"
+   },
+   "Simulator.getSimulationParameters": {
+    "module": "scigym.data.simulator",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/simulator.py"
+   },
+   "Simulator.updateSimulationParameters": {
+    "module": "scigym.data.simulator",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/simulator.py"
+   },
+   "Simulator.run": {
+    "module": "scigym.data.simulator",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/simulator.py"
+   },
+   "Simulator._setup_integrator": {
+    "module": "scigym.data.simulator",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/data/simulator.py"
+   }
+  },
+  "scigym.data": {},
+  "scigym.actions.experiment": {
+   "Experiment": {
+    "module": "scigym.actions.experiment"
+   },
+   "Experiment.__init__": {
+    "module": "scigym.actions.experiment",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/actions/experiment.py"
+   },
+   "Experiment._check_allowed_functions": {
+    "module": "scigym.actions.experiment",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/actions/experiment.py"
+   },
+   "Experiment.add_sbml_prefix": {
+    "module": "scigym.actions.experiment",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/actions/experiment.py"
+   },
+   "Experiment.call_simulator": {
+    "module": "scigym.actions.experiment",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/actions/experiment.py"
+   }
+  },
+  "scigym.actions.routines": {
+   "create_simulate_function": {
+    "module": "scigym.actions.routines",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/actions/routines.py"
+   }
+  },
+  "scigym.actions": {},
+  "scigym.eval.utils": {
+   "extract_reaction_edges": {
+    "module": "scigym.eval.utils",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/eval/utils.py"
+   },
+   "get_reaction_hash": {
+    "module": "scigym.eval.utils",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/eval/utils.py"
+   },
+   "extract_reaction_hashes": {
+    "module": "scigym.eval.utils",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/eval/utils.py"
+   },
+   "get_correctly_predicted_reaction_ids": {
+    "module": "scigym.eval.utils",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/eval/utils.py"
+   },
+   "plot_sbml_diagram": {
+    "module": "scigym.eval.utils",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/eval/utils.py"
+   },
+   "reaction_retrieval_score": {
+    "module": "scigym.eval.utils",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/eval/utils.py"
+   },
+   "reaction_jaccard_distance": {
+    "module": "scigym.eval.utils",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/eval/utils.py"
+   },
+   "calculate_hausdorff_score": {
+    "module": "scigym.eval.utils",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/eval/utils.py"
+   },
+   "extract_rid_to_kinetic_law": {
+    "module": "scigym.eval.utils",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/eval/utils.py"
+   },
+   "get_vector_norm": {
+    "module": "scigym.eval.utils",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/eval/utils.py"
+   },
+   "apply_vector_norm": {
+    "module": "scigym.eval.utils",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/eval/utils.py"
+   },
+   "compute_ged": {
+    "module": "scigym.eval.utils",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/eval/utils.py"
+   },
+   "normalized_metric": {
+    "module": "scigym.eval.utils",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/eval/utils.py"
+   },
+   "tokenize_math_formula": {
+    "module": "scigym.eval.utils",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/eval/utils.py"
+   },
+   "calculate_bleu": {
+    "module": "scigym.eval.utils",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/eval/utils.py"
+   },
+   "get_average_bleu_from_klaw": {
+    "module": "scigym.eval.utils",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/eval/utils.py"
+   },
+   "extract_species_edges_with_modifiers": {
+    "module": "scigym.eval.utils",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/eval/utils.py"
+   },
+   "evaluate_species_interaction_f1": {
+    "module": "scigym.eval.utils",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/eval/utils.py"
+   },
+   "extract_typed_species_edges": {
+    "module": "scigym.eval.utils",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/eval/utils.py"
+   },
+   "evaluate_typed_species_interaction_f1": {
+    "module": "scigym.eval.utils",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/eval/utils.py"
+   },
+   "compute_smape": {
+    "module": "scigym.eval.utils",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/eval/utils.py"
+   },
+   "compute_dict_smape": {
+    "module": "scigym.eval.utils",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/eval/utils.py"
+   }
+  },
+  "scigym.eval.evaluator": {
+   "Evaluator": {
+    "module": "scigym.eval.evaluator"
+   },
+   "Evaluator.__init__": {
+    "module": "scigym.eval.evaluator",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/eval/evaluator.py"
+   },
+   "Evaluator.setup_mse_evaluation": {
+    "module": "scigym.eval.evaluator",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/eval/evaluator.py"
+   },
+   "Evaluator.evaluate_smape": {
+    "module": "scigym.eval.evaluator",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/eval/evaluator.py"
+   },
+   "Evaluator.evaluate_smape_noise": {
+    "module": "scigym.eval.evaluator",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/eval/evaluator.py"
+   },
+   "Evaluator.evaluate_solution_complexity": {
+    "module": "scigym.eval.evaluator",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/eval/evaluator.py"
+   },
+   "Evaluator.evaluate_kinetic_law_similarity": {
+    "module": "scigym.eval.evaluator",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/eval/evaluator.py"
+   },
+   "Evaluator.evaluate_hausdorff_reaction_recovery": {
+    "module": "scigym.eval.evaluator",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/eval/evaluator.py"
+   },
+   "Evaluator.evaluate_exact_reaction_recovery": {
+    "module": "scigym.eval.evaluator",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/eval/evaluator.py"
+   },
+   "Evaluator.get_sbml_nx_graph": {
+    "module": "scigym.eval.evaluator",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/eval/evaluator.py"
+   },
+   "Evaluator.evaluate_graph_edit_distance": {
+    "module": "scigym.eval.evaluator",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/eval/evaluator.py"
+   },
+   "Evaluator.evaluate_species_interaction": {
+    "module": "scigym.eval.evaluator",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/eval/evaluator.py"
+   },
+   "Evaluator.run_simulations": {
+    "module": "scigym.eval.evaluator",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/eval/evaluator.py"
+   },
+   "Evaluator.__call__": {
+    "module": "scigym.eval.evaluator",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/eval/evaluator.py"
+   }
+  },
+  "scigym.eval": {},
+  "scigym.controller": {
+   "Controller": {
+    "module": "scigym.controller"
+   },
+   "Controller.__init__": {
+    "module": "scigym.controller",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/controller.py"
+   },
+   "Controller.initialize_question": {
+    "module": "scigym.controller",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/controller.py"
+   },
+   "Controller.initialize_agent": {
+    "module": "scigym.controller",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/controller.py"
+   },
+   "Controller._save_results": {
+    "module": "scigym.controller",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/controller.py"
+   },
+   "Controller._create_system_prompt": {
+    "module": "scigym.controller",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/controller.py"
+   },
+   "Controller._format_initial_prompt": {
+    "module": "scigym.controller",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/controller.py"
+   },
+   "Controller._eval_model": {
+    "module": "scigym.controller",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/controller.py"
+   },
+   "Controller._parse_response": {
+    "module": "scigym.controller",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/controller.py"
+   },
+   "Controller._extract_markdown_sections": {
+    "module": "scigym.controller",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/controller.py"
+   },
+   "Controller._process_action": {
+    "module": "scigym.controller",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/controller.py"
+   },
+   "Controller._receive_valid_response": {
+    "module": "scigym.controller",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/controller.py"
+   },
+   "Controller._conduct_experiment": {
+    "module": "scigym.controller",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/controller.py"
+   },
+   "Controller._execute_code": {
+    "module": "scigym.controller",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/controller.py"
+   },
+   "Controller._format_feedback": {
+    "module": "scigym.controller",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/controller.py"
+   },
+   "Controller.run_benchmark": {
+    "module": "scigym.controller",
+    "file": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/lib/python3.11/site-packages/scigym/controller.py"
+   }
+  }
+ },
+ "upstream_extensions": {
+  "__main__.OpenAICompatible": {
+   "bases": [
+    "scigym.api.api.LLM",
+    "scigym.api.api.ModelProvider"
+   ],
+   "overrides": [
+    "initialize",
+    "get_messages",
+    "get_response",
+    "_abc_impl"
+   ]
+  }
+ },
+ "processes": [
+  {
+   "process": {
+    "pid": 2023919,
+    "ppid": 2023911,
+    "argv": [
+     "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/src/main.py",
+     "run=gemini-3.8-flash",
+     "results_dir=.research/results",
+     "mode=sanity"
+    ],
+    "cwd": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06",
+    "python": "3.11.16",
+    "env": {
+     "AIRAS_EVAL_TASKS": "scigym_small",
+     "AIRAS_OBSERVE_DIR": "/tmp/tmp.SXV8jgD6x4",
+     "AIRAS_OBSERVE_INTEGRATION": {
+      "type": "str",
+      "len": 319,
+      "sha256": "a8a4c2a8617b41ae8d399008af89f66a3363851a48c306879263f877ccc52454"
+     },
+     "AIRAS_SECRET_NAMES": {
+      "type": "str",
+      "len": 230,
+      "sha256": "3a524db8755e0b70e722fe8ed7c1447ab1b2d095d4c79c5ecf8ab5c963444536"
+     },
+     "APPTAINER_APPNAME": "",
+     "APPTAINER_BIND": "/data1/rkp00041,/shared/software/apptainer,/data1/rkp00041/rku00122/.cache/huggingface",
+     "APPTAINER_COMMAND": "run",
+     "APPTAINER_CONTAINER": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.seyval/image.sif",
+     "APPTAINER_ENVIRONMENT": "/.singularity.d/env/91-environment.sh",
+     "APPTAINER_NAME": "image.sif",
+     "BASH_ENV": "/usr/share/lmod/lmod/init/bash",
+     "CUDA_VISIBLE_DEVICES": "0",
+     "DBUS_SESSION_BUS_ADDRESS": {
+      "redacted": "DBUS_SESSION_BUS_ADDRESS",
+      "len": 30
+     },
+     "DEBUGINFOD_URLS": "https://debuginfod.ubuntu.com ",
+     "ENVIRONMENT": "BATCH",
+     "GPG_KEY": {
+      "redacted": "GPG_KEY",
+      "len": 40
+     },
+     "HF_HOME": "/data1/rkp00041/rku00122/.cache/huggingface",
+     "HOME": "/home/rku00122",
+     "HOSTNAME": "c196",
+     "HYDRA_BOOTSTRAP": "slurm",
+     "HYDRA_LAUNCHER_EXTRA_ARGS": "--external-launcher",
+     "I_MPI_HYDRA_BOOTSTRAP": "slurm",
+     "I_MPI_HYDRA_BOOTSTRAP_EXEC_EXTRA_ARGS": "--external-launcher",
+     "LANG": "C.UTF-8",
+     "LD_LIBRARY_PATH": "/.singularity.d/libs",
+     "LEAN_DIR": "lean",
+     "LMOD_CMD": "/usr/share/lmod/lmod/libexec/lmod",
+     "LMOD_DIR": "/usr/share/lmod/lmod/libexec",
+     "LMOD_PKG": "/usr/share/lmod/lmod",
+     "LMOD_ROOT": "/usr/share/lmod",
+     "LMOD_SETTARG_FULL_SUPPORT": "no",
+     "LMOD_VERSION": "8.6.19",
+     "LMOD_sys": "Linux",
+     "LOGNAME": "rku00122",
+     "MAKEFLAGS": " -- RUN_ID=gemini-3.8-flash MODE=sanity AIRAS_EVAL_TASKS=scigym_small",
+     "MAKELEVEL": "2",
+     "MANPATH": "/usr/share/lmod/lmod/share/man:",
+     "MFLAGS": "",
+     "MODE": "sanity",
+     "MODULEPATH": "/shared/software/modulefiles:/etc/lmod/modules:/usr/share/lmod/lmod/modulefiles",
+     "MODULEPATH_ROOT": "/usr/share/modulefiles",
+     "MODULESHOME": "/usr/share/lmod/lmod",
+     "NVIDIA_API_KEY": {
+      "redacted": "NVIDIA_API_KEY",
+      "len": 70
+     },
+     "OLDPWD": "/home/rku00122",
+     "OMPI_MCA_plm_slurm_args": "--external-launcher",
+     "OPENDDE_ROOT_DIR": "/data1/rkp00041/rku00122/opendde-multinode/opendde_data",
+     "PATH": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+     "PIP_DISABLE_PIP_VERSION_CHECK": "1",
+     "PIP_NO_CACHE_DIR": "1",
+     "PROMPT_COMMAND": "PS1=\"Apptainer> \"; unset PROMPT_COMMAND",
+     "PRTE_MCA_plm_slurm_args": "--external-launcher",
+     "PS1": "Apptainer> ",
+     "PWD": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06",
+     "PYTHONDONTWRITEBYTECODE": "1",
+     "PYTHONPATH": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.airas",
+     "PYTHONUNBUFFERED": "1",
+     "PYTHON_SHA256": "91bcdebfdde239a003ae93738a7fce0f9230fee5c4bc2b86f6e6e8c6f98aabe8",
+     "PYTHON_VERSION": "3.11.16",
+     "RESULTS_DIR": ".research/results",
+     "RUN_ID": "gemini-3.8-flash",
+     "SHELL": "/bin/bash",
+     "SHLVL": "2",
+     "SINGULARITY_BIND": "/data1/rkp00041,/shared/software/apptainer,/data1/rkp00041/rku00122/.cache/huggingface",
+     "SINGULARITY_CONTAINER": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.seyval/image.sif",
+     "SINGULARITY_ENVIRONMENT": "/.singularity.d/env/91-environment.sh",
+     "SINGULARITY_NAME": "image.sif",
+     "SLURMD_NODENAME": "c196",
+     "SLURM_CLUSTER_NAME": "ai4s",
+     "SLURM_CONF": "/var/spool/slurmd/conf-cache/slurm.conf",
+     "SLURM_CONF_SERVER": "sctl1:6817,sctl2:6817",
+     "SLURM_CPUS_ON_NODE": "32",
+     "SLURM_GPUS": "1",
+     "SLURM_GPUS_ON_NODE": "1",
+     "SLURM_GTIDS": "0",
+     "SLURM_JOBID": "171824",
+     "SLURM_JOB_ACCOUNT": "rkp00041",
+     "SLURM_JOB_CPUS_PER_NODE": "32",
+     "SLURM_JOB_END_TIME": "1791306990",
+     "SLURM_JOB_GID": "200000",
+     "SLURM_JOB_GPUS": "0",
+     "SLURM_JOB_ID": "171824",
+     "SLURM_JOB_NAME": "seyval-aac40947-86c7-4798-ba36-0c20bd80ed06",
+     "SLURM_JOB_NODELIST": "c196",
+     "SLURM_JOB_NUM_NODES": "1",
+     "SLURM_JOB_PARTITION": "gpu",
+     "SLURM_JOB_QOS": "normal",
+     "SLURM_JOB_START_TIME": "1791292590",
+     "SLURM_JOB_UID": "100121",
+     "SLURM_JOB_USER": "rku00122",
+     "SLURM_LOCALID": "0",
+     "SLURM_MEM_PER_NODE": "409600",
+     "SLURM_NNODES": "1",
+     "SLURM_NODEID": "0",
+     "SLURM_NODELIST": "c196",
+     "SLURM_OOM_KILL_STEP": "0",
+     "SLURM_PRIO_PROCESS": "0",
+     "SLURM_PROCID": "0",
+     "SLURM_SUBMIT_DIR": "/home/rku00122",
+     "SLURM_SUBMIT_HOST": "c001",
+     "SLURM_TASKS_PER_NODE": "32",
+     "SLURM_TASK_PID": "2022629",
+     "SLURM_TOPOLOGY_ADDR": "spine1.leaf_c192.c196",
+     "SLURM_TOPOLOGY_ADDR_PATTERN": "switch.switch.node",
+     "SSH_CLIENT": "54.150.218.111 34919 22",
+     "SSH_CONNECTION": "54.150.218.111 34919 10.134.70.2 22",
+     "TMPDIR": "/tmp",
+     "TRITON_LIBCUDA_PATH": "/.singularity.d/libs",
+     "USER": "rku00122",
+     "USER_PATH": {
+      "type": "str",
+      "len": 325,
+      "sha256": "ec432e2ab40cbdf0e1cf2ab6cdbed640239e2ec44485d192391905809645d1b5"
+     },
+     "UV": "/usr/local/bin/uv",
+     "UV_NO_SYNC": "1",
+     "UV_RUN_RECURSION_DEPTH": "1",
+     "VIRTUAL_ENV": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv",
+     "WANDB_API_KEY": {
+      "redacted": "WANDB_API_KEY",
+      "len": 86
+     },
+     "XDG_RUNTIME_DIR": "/run/user/100121",
+     "XDG_SESSION_CLASS": {
+      "redacted": "XDG_SESSION_CLASS",
+      "len": 4
+     },
+     "XDG_SESSION_ID": {
+      "redacted": "XDG_SESSION_ID",
+      "len": 6
+     },
+     "XDG_SESSION_TYPE": {
+      "redacted": "XDG_SESSION_TYPE",
+      "len": 3
+     },
+     "_ModuleTable001_": {
+      "type": "str",
+      "len": 388,
+      "sha256": "cc15770ae1b2c0ee2081ad90348f9df8104354631584911f0f0b1e12a6338ec4"
+     },
+     "_ModuleTable_Sz_": "1",
+     "__LMOD_REF_COUNT_MODULEPATH": "/shared/software/modulefiles:2;/etc/lmod/modules:1;/usr/share/lmod/lmod/modulefiles:1"
+    },
+    "started": 1791292890.7461417,
+    "ended": 1791292981.176199
+   },
+   "calls": [],
+   "reaches": {
+    "opens": {
+     "config/config.yaml": {
+      "modes": {
+       "r": 1
+      },
+      "experiment_code": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/src/main.py:86"
+     },
+     "config/run/gemini-3.8-flash.yaml": {
+      "modes": {
+       "r": 1
+      },
+      "experiment_code": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/src/main.py:88"
+     },
+     ".research/results/gemini-3.8-flash/instances/BIOMD0000000027/stdout.txt": {
+      "modes": {
+       "a": 3,
+       "r": 6
+      },
+      "experiment_code": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/src/main.py:45"
+     },
+     ".research/results/gemini-3.8-flash/eval_inputs/scigym_small.json.gz": {
+      "modes": {
+       "w": 1
+      },
+      "experiment_code": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/src/main.py:136"
+     },
+     "/data1/rkp00041/scigym_improvement/data/scigym_sbml/small/BIOMD0000000027/truth.xml": {
+      "modes": {
+       "r": 1
+      },
+      "experiment_code": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/src/main.py:139"
+     },
+     "/data1/rkp00041/scigym_improvement/data/scigym_sbml/small/BIOMD0000000027/partial.xml": {
+      "modes": {
+       "r": 1
+      },
+      "experiment_code": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/src/main.py:140"
+     },
+     "/data1/rkp00041/scigym_improvement/data/scigym_sbml/small/BIOMD0000000027/truth.sedml": {
+      "modes": {
+       "r": 1
+      },
+      "experiment_code": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/src/main.py:141"
+     },
+     ".research/results/gemini-3.8-flash/tokens.json": {
+      "modes": {
+       "w": 1
+      },
+      "experiment_code": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/src/main.py:144"
+     },
+     ".research/results/gemini-3.8-flash/instances.tar.gz": {
+      "modes": {
+       "w": 1
+      },
+      "experiment_code": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/src/main.py:146"
+     },
+     ".research/results/gemini-3.8-flash/instances": {
+      "modes": {
+       "None": 1
+      },
+      "experiment_code": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/src/main.py:148"
+     },
+     "BIOMD0000000027": {
+      "modes": {
+       "None": 1
+      },
+      "experiment_code": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/src/main.py:148"
+     }
+    },
+    "connects": {},
+    "getaddrinfo": {},
+    "spawns": [
+     {
+      "event": "subprocess.Popen",
+      "argv": [
+       "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/bin/python3",
+       "-m",
+       "src.train",
+       "{\"instance_dir\": \"/data1/rkp00041/scigym_improvement/data/scigym_sbml/small/BIOMD0000000027\", \"out_dir\": \".research/results/gemini-3.8-flash/instances/BIOMD0000000027\", \"model\": \"google/gemini-3.8-flash\", \"base_url\": \"https://ai-gateway.vercel.sh/v1\", \"max_iterations\": 2, \"eval_debug_rounds\": 3, \"temperature\": 1.0, \"max_tokens\": 32768}"
+      ],
+      "hooked": true,
+      "caller": "/usr/local/lib/python3.11/subprocess.py:1823",
+      "experiment_code": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/src/main.py:46"
+     },
+     {
+      "event": "subprocess.Popen",
+      "argv": [
+       "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/bin/python3",
+       "-m",
+       "src.train",
+       "{\"instance_dir\": \"/data1/rkp00041/scigym_improvement/data/scigym_sbml/small/BIOMD0000000027\", \"out_dir\": \".research/results/gemini-3.8-flash/instances/BIOMD0000000027\", \"model\": \"google/gemini-3.8-flash\", \"base_url\": \"https://ai-gateway.vercel.sh/v1\", \"max_iterations\": 2, \"eval_debug_rounds\": 3, \"temperature\": 1.0, \"max_tokens\": 32768}"
+      ],
+      "hooked": true,
+      "caller": "/usr/local/lib/python3.11/subprocess.py:1823",
+      "experiment_code": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/src/main.py:46"
+     },
+     {
+      "event": "subprocess.Popen",
+      "argv": [
+       "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/bin/python3",
+       "-m",
+       "src.train",
+       "{\"instance_dir\": \"/data1/rkp00041/scigym_improvement/data/scigym_sbml/small/BIOMD0000000027\", \"out_dir\": \".research/results/gemini-3.8-flash/instances/BIOMD0000000027\", \"model\": \"google/gemini-3.8-flash\", \"base_url\": \"https://ai-gateway.vercel.sh/v1\", \"max_iterations\": 2, \"eval_debug_rounds\": 3, \"temperature\": 1.0, \"max_tokens\": 32768}"
+      ],
+      "hooked": true,
+      "caller": "/usr/local/lib/python3.11/subprocess.py:1823",
+      "experiment_code": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/src/main.py:46"
+     }
+    ],
+    "env_changes": [],
+    "tamper": []
+   },
+   "errors": []
+  },
+  {
+   "process": {
+    "pid": 2023921,
+    "ppid": 2023919,
+    "argv": [
+     "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/src/train.py",
+     "{\"instance_dir\": \"/data1/rkp00041/scigym_improvement/data/scigym_sbml/small/BIOMD0000000027\", \"out_dir\": \".research/results/gemini-3.8-flash/instances/BIOMD0000000027\", \"model\": \"google/gemini-3.8-flash\", \"base_url\": \"https://ai-gateway.vercel.sh/v1\", \"max_iterations\": 2, \"eval_debug_rounds\": 3, \"temperature\": 1.0, \"max_tokens\": 32768}"
+    ],
+    "cwd": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06",
+    "python": "3.11.16",
+    "env": {
+     "AIRAS_EVAL_TASKS": "scigym_small",
+     "AIRAS_OBSERVE_DIR": "/tmp/tmp.SXV8jgD6x4",
+     "AIRAS_OBSERVE_INTEGRATION": {
+      "type": "str",
+      "len": 319,
+      "sha256": "a8a4c2a8617b41ae8d399008af89f66a3363851a48c306879263f877ccc52454"
+     },
+     "AIRAS_SECRET_NAMES": {
+      "type": "str",
+      "len": 230,
+      "sha256": "3a524db8755e0b70e722fe8ed7c1447ab1b2d095d4c79c5ecf8ab5c963444536"
+     },
+     "APPTAINER_APPNAME": "",
+     "APPTAINER_BIND": "/data1/rkp00041,/shared/software/apptainer,/data1/rkp00041/rku00122/.cache/huggingface",
+     "APPTAINER_COMMAND": "run",
+     "APPTAINER_CONTAINER": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.seyval/image.sif",
+     "APPTAINER_ENVIRONMENT": "/.singularity.d/env/91-environment.sh",
+     "APPTAINER_NAME": "image.sif",
+     "BASH_ENV": "/usr/share/lmod/lmod/init/bash",
+     "CUDA_VISIBLE_DEVICES": "0",
+     "DBUS_SESSION_BUS_ADDRESS": {
+      "redacted": "DBUS_SESSION_BUS_ADDRESS",
+      "len": 30
+     },
+     "DEBUGINFOD_URLS": "https://debuginfod.ubuntu.com ",
+     "ENVIRONMENT": "BATCH",
+     "GPG_KEY": {
+      "redacted": "GPG_KEY",
+      "len": 40
+     },
+     "HF_HOME": "/data1/rkp00041/rku00122/.cache/huggingface",
+     "HOME": "/home/rku00122",
+     "HOSTNAME": "c196",
+     "HYDRA_BOOTSTRAP": "slurm",
+     "HYDRA_LAUNCHER_EXTRA_ARGS": "--external-launcher",
+     "I_MPI_HYDRA_BOOTSTRAP": "slurm",
+     "I_MPI_HYDRA_BOOTSTRAP_EXEC_EXTRA_ARGS": "--external-launcher",
+     "KMP_DUPLICATE_LIB_OK": "True",
+     "KMP_INIT_AT_FORK": "FALSE",
+     "LANG": "C.UTF-8",
+     "LD_LIBRARY_PATH": "/.singularity.d/libs",
+     "LEAN_DIR": "lean",
+     "LMOD_CMD": "/usr/share/lmod/lmod/libexec/lmod",
+     "LMOD_DIR": "/usr/share/lmod/lmod/libexec",
+     "LMOD_PKG": "/usr/share/lmod/lmod",
+     "LMOD_ROOT": "/usr/share/lmod",
+     "LMOD_SETTARG_FULL_SUPPORT": "no",
+     "LMOD_VERSION": "8.6.19",
+     "LMOD_sys": "Linux",
+     "LOGNAME": "rku00122",
+     "MAKEFLAGS": " -- RUN_ID=gemini-3.8-flash MODE=sanity AIRAS_EVAL_TASKS=scigym_small",
+     "MAKELEVEL": "2",
+     "MANPATH": "/usr/share/lmod/lmod/share/man:",
+     "MFLAGS": "",
+     "MODE": "sanity",
+     "MODULEPATH": "/shared/software/modulefiles:/etc/lmod/modules:/usr/share/lmod/lmod/modulefiles",
+     "MODULEPATH_ROOT": "/usr/share/modulefiles",
+     "MODULESHOME": "/usr/share/lmod/lmod",
+     "NVIDIA_API_KEY": {
+      "redacted": "NVIDIA_API_KEY",
+      "len": 70
+     },
+     "OLDPWD": "/home/rku00122",
+     "OMPI_MCA_plm_slurm_args": "--external-launcher",
+     "OPENDDE_ROOT_DIR": "/data1/rkp00041/rku00122/opendde-multinode/opendde_data",
+     "PATH": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+     "PIP_DISABLE_PIP_VERSION_CHECK": "1",
+     "PIP_NO_CACHE_DIR": "1",
+     "PROMPT_COMMAND": "PS1=\"Apptainer> \"; unset PROMPT_COMMAND",
+     "PRTE_MCA_plm_slurm_args": "--external-launcher",
+     "PS1": "Apptainer> ",
+     "PWD": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06",
+     "PYTHONDONTWRITEBYTECODE": "1",
+     "PYTHONPATH": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.airas",
+     "PYTHONUNBUFFERED": "1",
+     "PYTHON_SHA256": "91bcdebfdde239a003ae93738a7fce0f9230fee5c4bc2b86f6e6e8c6f98aabe8",
+     "PYTHON_VERSION": "3.11.16",
+     "RESULTS_DIR": ".research/results",
+     "RUN_ID": "gemini-3.8-flash",
+     "SHELL": "/bin/bash",
+     "SHLVL": "2",
+     "SINGULARITY_BIND": "/data1/rkp00041,/shared/software/apptainer,/data1/rkp00041/rku00122/.cache/huggingface",
+     "SINGULARITY_CONTAINER": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.seyval/image.sif",
+     "SINGULARITY_ENVIRONMENT": "/.singularity.d/env/91-environment.sh",
+     "SINGULARITY_NAME": "image.sif",
+     "SLURMD_NODENAME": "c196",
+     "SLURM_CLUSTER_NAME": "ai4s",
+     "SLURM_CONF": "/var/spool/slurmd/conf-cache/slurm.conf",
+     "SLURM_CONF_SERVER": "sctl1:6817,sctl2:6817",
+     "SLURM_CPUS_ON_NODE": "32",
+     "SLURM_GPUS": "1",
+     "SLURM_GPUS_ON_NODE": "1",
+     "SLURM_GTIDS": "0",
+     "SLURM_JOBID": "171824",
+     "SLURM_JOB_ACCOUNT": "rkp00041",
+     "SLURM_JOB_CPUS_PER_NODE": "32",
+     "SLURM_JOB_END_TIME": "1791306990",
+     "SLURM_JOB_GID": "200000",
+     "SLURM_JOB_GPUS": "0",
+     "SLURM_JOB_ID": "171824",
+     "SLURM_JOB_NAME": "seyval-aac40947-86c7-4798-ba36-0c20bd80ed06",
+     "SLURM_JOB_NODELIST": "c196",
+     "SLURM_JOB_NUM_NODES": "1",
+     "SLURM_JOB_PARTITION": "gpu",
+     "SLURM_JOB_QOS": "normal",
+     "SLURM_JOB_START_TIME": "1791292590",
+     "SLURM_JOB_UID": "100121",
+     "SLURM_JOB_USER": "rku00122",
+     "SLURM_LOCALID": "0",
+     "SLURM_MEM_PER_NODE": "409600",
+     "SLURM_NNODES": "1",
+     "SLURM_NODEID": "0",
+     "SLURM_NODELIST": "c196",
+     "SLURM_OOM_KILL_STEP": "0",
+     "SLURM_PRIO_PROCESS": "0",
+     "SLURM_PROCID": "0",
+     "SLURM_SUBMIT_DIR": "/home/rku00122",
+     "SLURM_SUBMIT_HOST": "c001",
+     "SLURM_TASKS_PER_NODE": "32",
+     "SLURM_TASK_PID": "2022629",
+     "SLURM_TOPOLOGY_ADDR": "spine1.leaf_c192.c196",
+     "SLURM_TOPOLOGY_ADDR_PATTERN": "switch.switch.node",
+     "SSH_CLIENT": "54.150.218.111 34919 22",
+     "SSH_CONNECTION": "54.150.218.111 34919 10.134.70.2 22",
+     "TMPDIR": "/tmp",
+     "TRITON_LIBCUDA_PATH": "/.singularity.d/libs",
+     "USER": "rku00122",
+     "USER_PATH": {
+      "type": "str",
+      "len": 325,
+      "sha256": "ec432e2ab40cbdf0e1cf2ab6cdbed640239e2ec44485d192391905809645d1b5"
+     },
+     "UV": "/usr/local/bin/uv",
+     "UV_NO_SYNC": "1",
+     "UV_RUN_RECURSION_DEPTH": "1",
+     "VIRTUAL_ENV": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv",
+     "WANDB_API_KEY": {
+      "redacted": "WANDB_API_KEY",
+      "len": 86
+     },
+     "XDG_RUNTIME_DIR": "/run/user/100121",
+     "XDG_SESSION_CLASS": {
+      "redacted": "XDG_SESSION_CLASS",
+      "len": 4
+     },
+     "XDG_SESSION_ID": {
+      "redacted": "XDG_SESSION_ID",
+      "len": 6
+     },
+     "XDG_SESSION_TYPE": {
+      "redacted": "XDG_SESSION_TYPE",
+      "len": 3
+     },
+     "_ModuleTable001_": {
+      "type": "str",
+      "len": 388,
+      "sha256": "cc15770ae1b2c0ee2081ad90348f9df8104354631584911f0f0b1e12a6338ec4"
+     },
+     "_ModuleTable_Sz_": "1",
+     "__LMOD_REF_COUNT_MODULEPATH": "/shared/software/modulefiles:2;/etc/lmod/modules:1;/usr/share/lmod/lmod/modulefiles:1"
+    },
+    "started": 1791292891.1209536,
+    "ended": 1791292907.822821
+   },
+   "calls": [
+    {
+     "seq": 0,
+     "fn": "scigym.controller.Controller.__init__",
+     "thread": 75557816058208,
+     "args": {
+      "path_to_sbml_cfg": "/data1/rkp00041/scigym_improvement/data/scigym_sbml/small/BIOMD0000000027",
+      "max_iterations": 2,
+      "test_memorize": false,
+      "output_directory": ".research/results/gemini-3.8-flash/instances/BIOMD0000000027",
+      "experiment_actions_path": "prompts/experiment_actions_perturb.md",
+      "customized_functions_path": "prompts/customized_functions_sim.md",
+      "eval_debug_rounds": 3,
+      "temperature": 1.0,
+      "task_difficulty": "fully_observable"
+     },
+     "ret": null
+    }
+   ],
+   "reaches": {
+    "opens": {
+     "/usr/local/lib/python311.zip": {
+      "modes": {
+       "r": 4
+      },
+      "experiment_code": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/src/train.py:16"
+     },
+     "/usr/share/zoneinfo/UTC": {
+      "modes": {
+       "r": 1
+      },
+      "experiment_code": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/src/train.py:18"
+     },
+     "/home/rku00122/.cache/matplotlib/fontlist-v390.json": {
+      "modes": {
+       "r": 1
+      },
+      "experiment_code": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/src/train.py:19"
+     },
+     "/proc/stat": {
+      "modes": {
+       "r": 3
+      },
+      "experiment_code": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/src/train.py:19"
+     }
+    },
+    "connects": {},
+    "getaddrinfo": {},
+    "spawns": [
+     {
+      "event": "subprocess.Popen",
+      "argv": [
+       "lscpu"
+      ],
+      "hooked": true,
+      "caller": "/usr/local/lib/python3.11/subprocess.py:1823",
+      "experiment_code": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/src/train.py:19"
+     }
+    ],
+    "env_changes": [
+     {
+      "event": "os.putenv",
+      "name": "OPENBLAS_MAIN_FREE"
+     },
+     {
+      "event": "os.putenv",
+      "name": "GOTOBLAS_MAIN_FREE"
+     },
+     {
+      "event": "os.unsetenv",
+      "name": "OPENBLAS_MAIN_FREE"
+     },
+     {
+      "event": "os.unsetenv",
+      "name": "GOTOBLAS_MAIN_FREE"
+     },
+     {
+      "event": "os.putenv",
+      "name": "KMP_DUPLICATE_LIB_OK"
+     },
+     {
+      "event": "os.putenv",
+      "name": "KMP_INIT_AT_FORK"
+     }
+    ],
+    "tamper": []
+   },
+   "errors": []
+  },
+  {
+   "process": {
+    "pid": 2023987,
+    "ppid": 2023919,
+    "argv": [
+     "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/src/train.py",
+     "{\"instance_dir\": \"/data1/rkp00041/scigym_improvement/data/scigym_sbml/small/BIOMD0000000027\", \"out_dir\": \".research/results/gemini-3.8-flash/instances/BIOMD0000000027\", \"model\": \"google/gemini-3.8-flash\", \"base_url\": \"https://ai-gateway.vercel.sh/v1\", \"max_iterations\": 2, \"eval_debug_rounds\": 3, \"temperature\": 1.0, \"max_tokens\": 32768}"
+    ],
+    "cwd": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06",
+    "python": "3.11.16",
+    "env": {
+     "AIRAS_EVAL_TASKS": "scigym_small",
+     "AIRAS_OBSERVE_DIR": "/tmp/tmp.SXV8jgD6x4",
+     "AIRAS_OBSERVE_INTEGRATION": {
+      "type": "str",
+      "len": 319,
+      "sha256": "a8a4c2a8617b41ae8d399008af89f66a3363851a48c306879263f877ccc52454"
+     },
+     "AIRAS_SECRET_NAMES": {
+      "type": "str",
+      "len": 230,
+      "sha256": "3a524db8755e0b70e722fe8ed7c1447ab1b2d095d4c79c5ecf8ab5c963444536"
+     },
+     "APPTAINER_APPNAME": "",
+     "APPTAINER_BIND": "/data1/rkp00041,/shared/software/apptainer,/data1/rkp00041/rku00122/.cache/huggingface",
+     "APPTAINER_COMMAND": "run",
+     "APPTAINER_CONTAINER": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.seyval/image.sif",
+     "APPTAINER_ENVIRONMENT": "/.singularity.d/env/91-environment.sh",
+     "APPTAINER_NAME": "image.sif",
+     "BASH_ENV": "/usr/share/lmod/lmod/init/bash",
+     "CUDA_VISIBLE_DEVICES": "0",
+     "DBUS_SESSION_BUS_ADDRESS": {
+      "redacted": "DBUS_SESSION_BUS_ADDRESS",
+      "len": 30
+     },
+     "DEBUGINFOD_URLS": "https://debuginfod.ubuntu.com ",
+     "ENVIRONMENT": "BATCH",
+     "GPG_KEY": {
+      "redacted": "GPG_KEY",
+      "len": 40
+     },
+     "HF_HOME": "/data1/rkp00041/rku00122/.cache/huggingface",
+     "HOME": "/home/rku00122",
+     "HOSTNAME": "c196",
+     "HYDRA_BOOTSTRAP": "slurm",
+     "HYDRA_LAUNCHER_EXTRA_ARGS": "--external-launcher",
+     "I_MPI_HYDRA_BOOTSTRAP": "slurm",
+     "I_MPI_HYDRA_BOOTSTRAP_EXEC_EXTRA_ARGS": "--external-launcher",
+     "KMP_DUPLICATE_LIB_OK": "True",
+     "KMP_INIT_AT_FORK": "FALSE",
+     "LANG": "C.UTF-8",
+     "LD_LIBRARY_PATH": "/.singularity.d/libs",
+     "LEAN_DIR": "lean",
+     "LMOD_CMD": "/usr/share/lmod/lmod/libexec/lmod",
+     "LMOD_DIR": "/usr/share/lmod/lmod/libexec",
+     "LMOD_PKG": "/usr/share/lmod/lmod",
+     "LMOD_ROOT": "/usr/share/lmod",
+     "LMOD_SETTARG_FULL_SUPPORT": "no",
+     "LMOD_VERSION": "8.6.19",
+     "LMOD_sys": "Linux",
+     "LOGNAME": "rku00122",
+     "MAKEFLAGS": " -- RUN_ID=gemini-3.8-flash MODE=sanity AIRAS_EVAL_TASKS=scigym_small",
+     "MAKELEVEL": "2",
+     "MANPATH": "/usr/share/lmod/lmod/share/man:",
+     "MFLAGS": "",
+     "MODE": "sanity",
+     "MODULEPATH": "/shared/software/modulefiles:/etc/lmod/modules:/usr/share/lmod/lmod/modulefiles",
+     "MODULEPATH_ROOT": "/usr/share/modulefiles",
+     "MODULESHOME": "/usr/share/lmod/lmod",
+     "NVIDIA_API_KEY": {
+      "redacted": "NVIDIA_API_KEY",
+      "len": 70
+     },
+     "OLDPWD": "/home/rku00122",
+     "OMPI_MCA_plm_slurm_args": "--external-launcher",
+     "OPENDDE_ROOT_DIR": "/data1/rkp00041/rku00122/opendde-multinode/opendde_data",
+     "PATH": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+     "PIP_DISABLE_PIP_VERSION_CHECK": "1",
+     "PIP_NO_CACHE_DIR": "1",
+     "PROMPT_COMMAND": "PS1=\"Apptainer> \"; unset PROMPT_COMMAND",
+     "PRTE_MCA_plm_slurm_args": "--external-launcher",
+     "PS1": "Apptainer> ",
+     "PWD": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06",
+     "PYTHONDONTWRITEBYTECODE": "1",
+     "PYTHONPATH": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.airas",
+     "PYTHONUNBUFFERED": "1",
+     "PYTHON_SHA256": "91bcdebfdde239a003ae93738a7fce0f9230fee5c4bc2b86f6e6e8c6f98aabe8",
+     "PYTHON_VERSION": "3.11.16",
+     "RESULTS_DIR": ".research/results",
+     "RUN_ID": "gemini-3.8-flash",
+     "SHELL": "/bin/bash",
+     "SHLVL": "2",
+     "SINGULARITY_BIND": "/data1/rkp00041,/shared/software/apptainer,/data1/rkp00041/rku00122/.cache/huggingface",
+     "SINGULARITY_CONTAINER": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.seyval/image.sif",
+     "SINGULARITY_ENVIRONMENT": "/.singularity.d/env/91-environment.sh",
+     "SINGULARITY_NAME": "image.sif",
+     "SLURMD_NODENAME": "c196",
+     "SLURM_CLUSTER_NAME": "ai4s",
+     "SLURM_CONF": "/var/spool/slurmd/conf-cache/slurm.conf",
+     "SLURM_CONF_SERVER": "sctl1:6817,sctl2:6817",
+     "SLURM_CPUS_ON_NODE": "32",
+     "SLURM_GPUS": "1",
+     "SLURM_GPUS_ON_NODE": "1",
+     "SLURM_GTIDS": "0",
+     "SLURM_JOBID": "171824",
+     "SLURM_JOB_ACCOUNT": "rkp00041",
+     "SLURM_JOB_CPUS_PER_NODE": "32",
+     "SLURM_JOB_END_TIME": "1791306990",
+     "SLURM_JOB_GID": "200000",
+     "SLURM_JOB_GPUS": "0",
+     "SLURM_JOB_ID": "171824",
+     "SLURM_JOB_NAME": "seyval-aac40947-86c7-4798-ba36-0c20bd80ed06",
+     "SLURM_JOB_NODELIST": "c196",
+     "SLURM_JOB_NUM_NODES": "1",
+     "SLURM_JOB_PARTITION": "gpu",
+     "SLURM_JOB_QOS": "normal",
+     "SLURM_JOB_START_TIME": "1791292590",
+     "SLURM_JOB_UID": "100121",
+     "SLURM_JOB_USER": "rku00122",
+     "SLURM_LOCALID": "0",
+     "SLURM_MEM_PER_NODE": "409600",
+     "SLURM_NNODES": "1",
+     "SLURM_NODEID": "0",
+     "SLURM_NODELIST": "c196",
+     "SLURM_OOM_KILL_STEP": "0",
+     "SLURM_PRIO_PROCESS": "0",
+     "SLURM_PROCID": "0",
+     "SLURM_SUBMIT_DIR": "/home/rku00122",
+     "SLURM_SUBMIT_HOST": "c001",
+     "SLURM_TASKS_PER_NODE": "32",
+     "SLURM_TASK_PID": "2022629",
+     "SLURM_TOPOLOGY_ADDR": "spine1.leaf_c192.c196",
+     "SLURM_TOPOLOGY_ADDR_PATTERN": "switch.switch.node",
+     "SSH_CLIENT": "54.150.218.111 34919 22",
+     "SSH_CONNECTION": "54.150.218.111 34919 10.134.70.2 22",
+     "TMPDIR": "/tmp",
+     "TRITON_LIBCUDA_PATH": "/.singularity.d/libs",
+     "USER": "rku00122",
+     "USER_PATH": {
+      "type": "str",
+      "len": 325,
+      "sha256": "ec432e2ab40cbdf0e1cf2ab6cdbed640239e2ec44485d192391905809645d1b5"
+     },
+     "UV": "/usr/local/bin/uv",
+     "UV_NO_SYNC": "1",
+     "UV_RUN_RECURSION_DEPTH": "1",
+     "VIRTUAL_ENV": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv",
+     "WANDB_API_KEY": {
+      "redacted": "WANDB_API_KEY",
+      "len": 86
+     },
+     "XDG_RUNTIME_DIR": "/run/user/100121",
+     "XDG_SESSION_CLASS": {
+      "redacted": "XDG_SESSION_CLASS",
+      "len": 4
+     },
+     "XDG_SESSION_ID": {
+      "redacted": "XDG_SESSION_ID",
+      "len": 6
+     },
+     "XDG_SESSION_TYPE": {
+      "redacted": "XDG_SESSION_TYPE",
+      "len": 3
+     },
+     "_ModuleTable001_": {
+      "type": "str",
+      "len": 388,
+      "sha256": "cc15770ae1b2c0ee2081ad90348f9df8104354631584911f0f0b1e12a6338ec4"
+     },
+     "_ModuleTable_Sz_": "1",
+     "__LMOD_REF_COUNT_MODULEPATH": "/shared/software/modulefiles:2;/etc/lmod/modules:1;/usr/share/lmod/lmod/modulefiles:1"
+    },
+    "started": 1791292921.1413963,
+    "ended": 1791292936.3449402
+   },
+   "calls": [
+    {
+     "seq": 0,
+     "fn": "scigym.controller.Controller.__init__",
+     "thread": 77428573159776,
+     "args": {
+      "path_to_sbml_cfg": "/data1/rkp00041/scigym_improvement/data/scigym_sbml/small/BIOMD0000000027",
+      "max_iterations": 2,
+      "test_memorize": false,
+      "output_directory": ".research/results/gemini-3.8-flash/instances/BIOMD0000000027",
+      "experiment_actions_path": "prompts/experiment_actions_perturb.md",
+      "customized_functions_path": "prompts/customized_functions_sim.md",
+      "eval_debug_rounds": 3,
+      "temperature": 1.0,
+      "task_difficulty": "fully_observable"
+     },
+     "ret": null
+    }
+   ],
+   "reaches": {
+    "opens": {
+     "/usr/local/lib/python311.zip": {
+      "modes": {
+       "r": 4
+      },
+      "experiment_code": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/src/train.py:16"
+     },
+     "/usr/share/zoneinfo/UTC": {
+      "modes": {
+       "r": 1
+      },
+      "experiment_code": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/src/train.py:18"
+     },
+     "/home/rku00122/.cache/matplotlib/fontlist-v390.json": {
+      "modes": {
+       "r": 1
+      },
+      "experiment_code": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/src/train.py:19"
+     },
+     "/proc/stat": {
+      "modes": {
+       "r": 3
+      },
+      "experiment_code": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/src/train.py:19"
+     }
+    },
+    "connects": {},
+    "getaddrinfo": {},
+    "spawns": [
+     {
+      "event": "subprocess.Popen",
+      "argv": [
+       "lscpu"
+      ],
+      "hooked": true,
+      "caller": "/usr/local/lib/python3.11/subprocess.py:1823",
+      "experiment_code": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/src/train.py:19"
+     }
+    ],
+    "env_changes": [
+     {
+      "event": "os.putenv",
+      "name": "OPENBLAS_MAIN_FREE"
+     },
+     {
+      "event": "os.putenv",
+      "name": "GOTOBLAS_MAIN_FREE"
+     },
+     {
+      "event": "os.unsetenv",
+      "name": "OPENBLAS_MAIN_FREE"
+     },
+     {
+      "event": "os.unsetenv",
+      "name": "GOTOBLAS_MAIN_FREE"
+     },
+     {
+      "event": "os.putenv",
+      "name": "KMP_DUPLICATE_LIB_OK"
+     },
+     {
+      "event": "os.putenv",
+      "name": "KMP_INIT_AT_FORK"
+     }
+    ],
+    "tamper": []
+   },
+   "errors": []
+  },
+  {
+   "process": {
+    "pid": 2024145,
+    "ppid": 2023919,
+    "argv": [
+     "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/src/train.py",
+     "{\"instance_dir\": \"/data1/rkp00041/scigym_improvement/data/scigym_sbml/small/BIOMD0000000027\", \"out_dir\": \".research/results/gemini-3.8-flash/instances/BIOMD0000000027\", \"model\": \"google/gemini-3.8-flash\", \"base_url\": \"https://ai-gateway.vercel.sh/v1\", \"max_iterations\": 2, \"eval_debug_rounds\": 3, \"temperature\": 1.0, \"max_tokens\": 32768}"
+    ],
+    "cwd": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06",
+    "python": "3.11.16",
+    "env": {
+     "AIRAS_EVAL_TASKS": "scigym_small",
+     "AIRAS_OBSERVE_DIR": "/tmp/tmp.SXV8jgD6x4",
+     "AIRAS_OBSERVE_INTEGRATION": {
+      "type": "str",
+      "len": 319,
+      "sha256": "a8a4c2a8617b41ae8d399008af89f66a3363851a48c306879263f877ccc52454"
+     },
+     "AIRAS_SECRET_NAMES": {
+      "type": "str",
+      "len": 230,
+      "sha256": "3a524db8755e0b70e722fe8ed7c1447ab1b2d095d4c79c5ecf8ab5c963444536"
+     },
+     "APPTAINER_APPNAME": "",
+     "APPTAINER_BIND": "/data1/rkp00041,/shared/software/apptainer,/data1/rkp00041/rku00122/.cache/huggingface",
+     "APPTAINER_COMMAND": "run",
+     "APPTAINER_CONTAINER": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.seyval/image.sif",
+     "APPTAINER_ENVIRONMENT": "/.singularity.d/env/91-environment.sh",
+     "APPTAINER_NAME": "image.sif",
+     "BASH_ENV": "/usr/share/lmod/lmod/init/bash",
+     "CUDA_VISIBLE_DEVICES": "0",
+     "DBUS_SESSION_BUS_ADDRESS": {
+      "redacted": "DBUS_SESSION_BUS_ADDRESS",
+      "len": 30
+     },
+     "DEBUGINFOD_URLS": "https://debuginfod.ubuntu.com ",
+     "ENVIRONMENT": "BATCH",
+     "GPG_KEY": {
+      "redacted": "GPG_KEY",
+      "len": 40
+     },
+     "HF_HOME": "/data1/rkp00041/rku00122/.cache/huggingface",
+     "HOME": "/home/rku00122",
+     "HOSTNAME": "c196",
+     "HYDRA_BOOTSTRAP": "slurm",
+     "HYDRA_LAUNCHER_EXTRA_ARGS": "--external-launcher",
+     "I_MPI_HYDRA_BOOTSTRAP": "slurm",
+     "I_MPI_HYDRA_BOOTSTRAP_EXEC_EXTRA_ARGS": "--external-launcher",
+     "KMP_DUPLICATE_LIB_OK": "True",
+     "KMP_INIT_AT_FORK": "FALSE",
+     "LANG": "C.UTF-8",
+     "LD_LIBRARY_PATH": "/.singularity.d/libs",
+     "LEAN_DIR": "lean",
+     "LMOD_CMD": "/usr/share/lmod/lmod/libexec/lmod",
+     "LMOD_DIR": "/usr/share/lmod/lmod/libexec",
+     "LMOD_PKG": "/usr/share/lmod/lmod",
+     "LMOD_ROOT": "/usr/share/lmod",
+     "LMOD_SETTARG_FULL_SUPPORT": "no",
+     "LMOD_VERSION": "8.6.19",
+     "LMOD_sys": "Linux",
+     "LOGNAME": "rku00122",
+     "MAKEFLAGS": " -- RUN_ID=gemini-3.8-flash MODE=sanity AIRAS_EVAL_TASKS=scigym_small",
+     "MAKELEVEL": "2",
+     "MANPATH": "/usr/share/lmod/lmod/share/man:",
+     "MFLAGS": "",
+     "MODE": "sanity",
+     "MODULEPATH": "/shared/software/modulefiles:/etc/lmod/modules:/usr/share/lmod/lmod/modulefiles",
+     "MODULEPATH_ROOT": "/usr/share/modulefiles",
+     "MODULESHOME": "/usr/share/lmod/lmod",
+     "NVIDIA_API_KEY": {
+      "redacted": "NVIDIA_API_KEY",
+      "len": 70
+     },
+     "OLDPWD": "/home/rku00122",
+     "OMPI_MCA_plm_slurm_args": "--external-launcher",
+     "OPENDDE_ROOT_DIR": "/data1/rkp00041/rku00122/opendde-multinode/opendde_data",
+     "PATH": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+     "PIP_DISABLE_PIP_VERSION_CHECK": "1",
+     "PIP_NO_CACHE_DIR": "1",
+     "PROMPT_COMMAND": "PS1=\"Apptainer> \"; unset PROMPT_COMMAND",
+     "PRTE_MCA_plm_slurm_args": "--external-launcher",
+     "PS1": "Apptainer> ",
+     "PWD": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06",
+     "PYTHONDONTWRITEBYTECODE": "1",
+     "PYTHONPATH": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.airas",
+     "PYTHONUNBUFFERED": "1",
+     "PYTHON_SHA256": "91bcdebfdde239a003ae93738a7fce0f9230fee5c4bc2b86f6e6e8c6f98aabe8",
+     "PYTHON_VERSION": "3.11.16",
+     "RESULTS_DIR": ".research/results",
+     "RUN_ID": "gemini-3.8-flash",
+     "SHELL": "/bin/bash",
+     "SHLVL": "2",
+     "SINGULARITY_BIND": "/data1/rkp00041,/shared/software/apptainer,/data1/rkp00041/rku00122/.cache/huggingface",
+     "SINGULARITY_CONTAINER": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.seyval/image.sif",
+     "SINGULARITY_ENVIRONMENT": "/.singularity.d/env/91-environment.sh",
+     "SINGULARITY_NAME": "image.sif",
+     "SLURMD_NODENAME": "c196",
+     "SLURM_CLUSTER_NAME": "ai4s",
+     "SLURM_CONF": "/var/spool/slurmd/conf-cache/slurm.conf",
+     "SLURM_CONF_SERVER": "sctl1:6817,sctl2:6817",
+     "SLURM_CPUS_ON_NODE": "32",
+     "SLURM_GPUS": "1",
+     "SLURM_GPUS_ON_NODE": "1",
+     "SLURM_GTIDS": "0",
+     "SLURM_JOBID": "171824",
+     "SLURM_JOB_ACCOUNT": "rkp00041",
+     "SLURM_JOB_CPUS_PER_NODE": "32",
+     "SLURM_JOB_END_TIME": "1791306990",
+     "SLURM_JOB_GID": "200000",
+     "SLURM_JOB_GPUS": "0",
+     "SLURM_JOB_ID": "171824",
+     "SLURM_JOB_NAME": "seyval-aac40947-86c7-4798-ba36-0c20bd80ed06",
+     "SLURM_JOB_NODELIST": "c196",
+     "SLURM_JOB_NUM_NODES": "1",
+     "SLURM_JOB_PARTITION": "gpu",
+     "SLURM_JOB_QOS": "normal",
+     "SLURM_JOB_START_TIME": "1791292590",
+     "SLURM_JOB_UID": "100121",
+     "SLURM_JOB_USER": "rku00122",
+     "SLURM_LOCALID": "0",
+     "SLURM_MEM_PER_NODE": "409600",
+     "SLURM_NNODES": "1",
+     "SLURM_NODEID": "0",
+     "SLURM_NODELIST": "c196",
+     "SLURM_OOM_KILL_STEP": "0",
+     "SLURM_PRIO_PROCESS": "0",
+     "SLURM_PROCID": "0",
+     "SLURM_SUBMIT_DIR": "/home/rku00122",
+     "SLURM_SUBMIT_HOST": "c001",
+     "SLURM_TASKS_PER_NODE": "32",
+     "SLURM_TASK_PID": "2022629",
+     "SLURM_TOPOLOGY_ADDR": "spine1.leaf_c192.c196",
+     "SLURM_TOPOLOGY_ADDR_PATTERN": "switch.switch.node",
+     "SSH_CLIENT": "54.150.218.111 34919 22",
+     "SSH_CONNECTION": "54.150.218.111 34919 10.134.70.2 22",
+     "TMPDIR": "/tmp",
+     "TRITON_LIBCUDA_PATH": "/.singularity.d/libs",
+     "USER": "rku00122",
+     "USER_PATH": {
+      "type": "str",
+      "len": 325,
+      "sha256": "ec432e2ab40cbdf0e1cf2ab6cdbed640239e2ec44485d192391905809645d1b5"
+     },
+     "UV": "/usr/local/bin/uv",
+     "UV_NO_SYNC": "1",
+     "UV_RUN_RECURSION_DEPTH": "1",
+     "VIRTUAL_ENV": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/.venv",
+     "WANDB_API_KEY": {
+      "redacted": "WANDB_API_KEY",
+      "len": 86
+     },
+     "XDG_RUNTIME_DIR": "/run/user/100121",
+     "XDG_SESSION_CLASS": {
+      "redacted": "XDG_SESSION_CLASS",
+      "len": 4
+     },
+     "XDG_SESSION_ID": {
+      "redacted": "XDG_SESSION_ID",
+      "len": 6
+     },
+     "XDG_SESSION_TYPE": {
+      "redacted": "XDG_SESSION_TYPE",
+      "len": 3
+     },
+     "_ModuleTable001_": {
+      "type": "str",
+      "len": 388,
+      "sha256": "cc15770ae1b2c0ee2081ad90348f9df8104354631584911f0f0b1e12a6338ec4"
+     },
+     "_ModuleTable_Sz_": "1",
+     "__LMOD_REF_COUNT_MODULEPATH": "/shared/software/modulefiles:2;/etc/lmod/modules:1;/usr/share/lmod/lmod/modulefiles:1"
+    },
+    "started": 1791292951.1609457,
+    "ended": 1791292966.3631215
+   },
+   "calls": [
+    {
+     "seq": 0,
+     "fn": "scigym.controller.Controller.__init__",
+     "thread": 76396369953120,
+     "args": {
+      "path_to_sbml_cfg": "/data1/rkp00041/scigym_improvement/data/scigym_sbml/small/BIOMD0000000027",
+      "max_iterations": 2,
+      "test_memorize": false,
+      "output_directory": ".research/results/gemini-3.8-flash/instances/BIOMD0000000027",
+      "experiment_actions_path": "prompts/experiment_actions_perturb.md",
+      "customized_functions_path": "prompts/customized_functions_sim.md",
+      "eval_debug_rounds": 3,
+      "temperature": 1.0,
+      "task_difficulty": "fully_observable"
+     },
+     "ret": null
+    }
+   ],
+   "reaches": {
+    "opens": {
+     "/usr/local/lib/python311.zip": {
+      "modes": {
+       "r": 4
+      },
+      "experiment_code": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/src/train.py:16"
+     },
+     "/usr/share/zoneinfo/UTC": {
+      "modes": {
+       "r": 1
+      },
+      "experiment_code": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/src/train.py:18"
+     },
+     "/home/rku00122/.cache/matplotlib/fontlist-v390.json": {
+      "modes": {
+       "r": 1
+      },
+      "experiment_code": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/src/train.py:19"
+     },
+     "/proc/stat": {
+      "modes": {
+       "r": 3
+      },
+      "experiment_code": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/src/train.py:19"
+     }
+    },
+    "connects": {},
+    "getaddrinfo": {},
+    "spawns": [
+     {
+      "event": "subprocess.Popen",
+      "argv": [
+       "lscpu"
+      ],
+      "hooked": true,
+      "caller": "/usr/local/lib/python3.11/subprocess.py:1823",
+      "experiment_code": "/data1/rkp00041/rku00122/aac40947-86c7-4798-ba36-0c20bd80ed06/src/train.py:19"
+     }
+    ],
+    "env_changes": [
+     {
+      "event": "os.putenv",
+      "name": "OPENBLAS_MAIN_FREE"
+     },
+     {
+      "event": "os.putenv",
+      "name": "GOTOBLAS_MAIN_FREE"
+     },
+     {
+      "event": "os.unsetenv",
+      "name": "OPENBLAS_MAIN_FREE"
+     },
+     {
+      "event": "os.unsetenv",
+      "name": "GOTOBLAS_MAIN_FREE"
+     },
+     {
+      "event": "os.putenv",
+      "name": "KMP_DUPLICATE_LIB_OK"
+     },
+     {
+      "event": "os.putenv",
+      "name": "KMP_INIT_AT_FORK"
+     }
+    ],
+    "tamper": []
+   },
+   "errors": []
+  }
+ ]
+}
