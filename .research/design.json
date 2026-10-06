@@ -94,7 +94,7 @@
        "repository_integration": {
         "repository_id": "s1.r1",
         "extension_points": [
-         "scigym.api.LLM"
+         "scigym.api.api.LLM"
         ],
         "arguments": [
          {
